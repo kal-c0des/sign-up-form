@@ -1,0 +1,23 @@
+.blue {
+  border: solid 1px blue;
+}
+
+.red {
+  border: solid 1px red;
+}
+
+.green {
+  border: solid 1px green;
+}
+
+.flex {
+  display: flex;
+}
+
+.bg {
+  width: 33%;
+}
+
+.content {
+  flex: 1;
+}
