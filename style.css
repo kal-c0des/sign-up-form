@@ -68,8 +68,9 @@ h1 {
   justify-content: center;
 }
 
-.attribution a {
-  color: inherit;
+.attribution a,
+.link:visited {
+  color: white;
   text-decoration: underline;
 }
 
