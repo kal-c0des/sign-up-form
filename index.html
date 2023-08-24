@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="flex main-container">
+    <div class="flex main">
       <div class="bg">
         <div class="logo-container">
           <div class="logo-background">
@@ -20,102 +20,103 @@
         <div class="attribution-container">
           <p>
             Photo by
-            <a href="https://unsplash.com/@selina_bub" target="_blank"> Selina Bubendorfer </a>
+            <a href="https://unsplash.com/@selina_bub" target="_blank">
+              Selina Bubendorfer
+            </a>
             on
             <a href="https://unsplash.com/" target="_blank"> Unsplash </a>
           </p>
         </div>
       </div>
       <div class="content">
-        <div class="upper-content">
-          <p>
-            This is not a real online service, but it could be! You know you need something like
-            this in your life to help you realize your deepest dream of living the bum life. Sign up now (or later)
-            to meet other bums near you!
+        <div class="nested upper-content">
+          <p class="p-upper">
+            This is not a real online service, but it could be! You know you
+            need something like this in your life to help you realize your
+            deepest dream of living the bum life. Sign up now (or later) to meet
+            other bums near you!
           </p>
-  
+
           <p class="p-lower">You know you want to.</p>
-          <div></div>
-          <div class="form-container">
-            <h2>Let's do this!</h2>
-            <form>
-              <div class="flex">
-                <div class="input-container">
-                  <label for="first_name">First Name</label>
-                  <input
-                    type="text"
-                    id="first_name"
-                    name="first_name"
-                    placeholder="First Name"
-                    required
-                  />
-                </div>
-                <div class="input-container">
-                  <label for="last_name"> Last Name </label>
-                  <input
-                    type="text"
-                    id="last_name"
-                    name="last_name"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex">
-                <div class="input-container">
-                  <label for="email">Email</label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="input-container">
-                  <label for="phone_number"> Phone Number </label>
-                  <input
-                    type="text"
-                    id="phone_number"
-                    name="phone_number"
-                    placeholder="Phone Number"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="flex">
-                <div class="input-container">
-                  <label for="first_name">Password</label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Password"
-                    required
-                  />
-                </div>
-                <div class="input-container">
-                  <label for="last_name"> Confirm Password </label>
-                  <input
-                    type="password"
-                    id="confirm_password"
-                    name="confirm_password"
-                    placeholder="Confirm Password"
-                    required
-                    onkeyup="check()"
-                  />
-                  <span id='message'></span>
-                </div>
         </div>
-      
-            </div>
-            <div class="lower-content">
-              <div class="button_container">
-                <button>Create Account</button>
+        <div class="nested form-container">
+          <h2>Let's do this!</h2>
+          <form>
+            <div class="flex">
+              <div class="input-container">
+                <label for="first_name">First Name</label>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  placeholder="First Name"
+                  required
+                />
               </div>
-              <h6>Already have an account? <span>Log in</span></h6>
+              <div class="input-container">
+                <label for="last_name"> Last Name </label>
+                <input
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <label for="phone_number"> Phone Number </label>
+                <input
+                  type="text"
+                  id="phone_number"
+                  name="phone_number"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="input-container">
+                <label for="first_name">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <label for="last_name"> Confirm Password </label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="Confirm Password"
+                  required
+                  onkeyup="check()"
+                />
+                <span id="message"></span>
+              </div>
             </div>
           </form>
+        </div>
+        <div class="nested lower-content">
+          <div class="button_container">
+            <button>Create Account</button>
+          </div>
+          <h6>Already have an account? <span>Log in</span></h6>
         </div>
       </div>
     </div>
