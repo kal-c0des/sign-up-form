@@ -4,105 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="flex blue">
-      <div class="bg green">
+    <div class="flex main-container">
+      <div class="bg">
         <div class="logo-container">
-          <img src="#" class="logo" />
+          <div class="logo-background">
+            <img src="./images/odin-lined.png" class="logo" />
+            <h1>BUM</h1>
+          </div>
         </div>
         <div class="attribution-container">
           <p>
-            Photo by <a href="#" target="_blank"> Halie West </a> on
-            <a href="#" target="_blank"> Unsplash</a>
+            Photo by
+            <a href="https://unsplash.com/@selina_bub" target="_blank"> Selina Bubendorfer </a>
+            on
+            <a href="https://unsplash.com/" target="_blank"> Unsplash </a>
           </p>
         </div>
       </div>
-      <div class="content red">
-        <div class="header">
-          <h2>
-            This is not a real service, but it could be! My family always said,
-            if you're gonna be a bum, be the best bum there is. Sign up
-            <em>now</em> (or whenever) to unlock the full potential of living
-            the bum life.<br />
-            You <em>know</em> you want to.
-          </h2>
+      <div class="content">
+        <div class="upper-content">
+          <p>
+            This is not a real online service, but it could be! You know you need something like
+            this in your life to help you realize your deepest dream of living the bum life. Sign up now (or later)
+            to meet other bums near you!
+          </p>
+  
+          <p class="p-lower">You know you want to.</p>
+          <div></div>
+          <div class="form-container">
+            <h2>Let's do this!</h2>
+            <form>
+              <div class="flex">
+                <div class="input-container">
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="last_name"> Last Name </label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-container">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="phone_number"> Phone Number </label>
+                  <input
+                    type="text"
+                    id="phone_number"
+                    name="phone_number"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-container">
+                  <label for="first_name">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="last_name"> Confirm Password </label>
+                  <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    placeholder="Confirm Password"
+                    required
+                    onkeyup="check()"
+                  />
+                  <span id='message'></span>
+                </div>
         </div>
-        <div class="form-container">
-          <h2>Let's do this!</h2>
-          <form>
-            <div class="flex">
-              <div class="input-container">
-                <label for="first_name">First Name</label>
-                <input
-                  type="text"
-                  id="first_name"
-                  name="first_name"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div class="input-container">
-                <label for="last_name">Last Name</label>
-                <input
-                  type="text"
-                  id="last_name"
-                  name="last_name"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
+      
             </div>
-            <div class="flex">
-              <div class="input-container">
-                <label for="email">Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
+            <div class="lower-content">
+              <div class="button_container">
+                <button>Create Account</button>
               </div>
-              <div class="input-container">
-                <label for="phone_number">Phone Number</label>
-                <input
-                  type="text"
-                  id="phone_number"
-                  name="phone_number"
-                  placeholder="Phone Number"
-                  required
-                />
-              </div>
-            </div>
-            <div class="flex">
-              <div class="input-container">
-                <label for="password">Password</label>
-                <input
-                  type="text"
-                  id="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                />
-              </div>
-              <div class="input-container">
-                <label for="confirm_password">Confirm Password</label>
-                <input
-                  type="text"
-                  id="confirm_password"
-                  name="confirm_password"
-                  placeholder="Confirm Password"
-                  required
-                />
-              </div>
-            </div>
-            <div class="button-container">
-              <button id="create_account">Create Account</button>
-              <p>
-                Already have an account? <a href="#" target="_blank">Log in</a>
-              </p>
+              <h6>Already have an account? <span>Log in</span></h6>
             </div>
           </form>
         </div>
