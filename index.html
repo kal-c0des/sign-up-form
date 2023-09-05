@@ -47,7 +47,7 @@
         </div>
         <div class="nested form-container">
           <h2>Let's do this!</h2>
-          <form>
+          <form form="signup" action="">
             <div class="flex">
               <div class="input-container">
                 <label for="first_name">First Name</label>
@@ -74,7 +74,7 @@
               <div class="input-container">
                 <label for="email">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   id="email"
                   name="email"
                   placeholder="Email"
@@ -84,7 +84,7 @@
               <div class="input-container">
                 <label for="phone_number"> Phone Number </label>
                 <input
-                  type="text"
+                  type="tel"
                   id="phone_number"
                   name="phone_number"
                   placeholder="Phone Number"
@@ -94,17 +94,17 @@
             </div>
             <div class="flex">
               <div class="input-container">
-                <label for="first_name">Password</label>
+                <label for="input_password">Password</label>
                 <input
                   type="password"
-                  id="password"
-                  name="password"
+                  id="input_password"
+                  name="input_password"
                   placeholder="Password"
                   required
                 />
               </div>
               <div class="input-container">
-                <label for="last_name"> Confirm Password </label>
+                <label for="confirm_password"> Confirm Password </label>
                 <input
                   type="password"
                   id="confirm_password"
@@ -113,16 +113,18 @@
                   required
                   onkeyup=""
                 />
-                <span id="message"></span>
+                <p class="match_error">*Passwords do not match</p>
               </div>
             </div>
           </form>
         </div>
-        <div class="nested lower-content">
+        <div class="nested form-lower">
           <div class="button_container">
-            <button>Create Account</button>
+            <button type="submit" form="signup" class="submit">
+              Create Account
+            </button>
           </div>
-          <h6>Already have an account? <span>Log in</span></h6>
+          <h6>Already have an account? <a href="" class="log-in">Log in</a></h6>
         </div>
       </div>
     </div>
