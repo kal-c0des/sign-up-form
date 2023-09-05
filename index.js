@@ -28,6 +28,6 @@ const validate = () => {
   });
 };
 
-submit.addEventListener("click", validate);
+submitBtn.addEventListener("click", validate);
 passwordInput.addEventListener("input", checkPassword);
 confirmPassword.addEventListener("input", checkPassword);

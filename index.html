@@ -6,7 +6,7 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="flex main">
@@ -102,6 +102,7 @@
                   placeholder="Password"
                   required
                 />
+                <p class="match_error">* Passwords do not match</p>
               </div>
               <div class="input-container">
                 <label for="confirm_password"> Confirm Password </label>
@@ -113,7 +114,6 @@
                   required
                   onkeyup=""
                 />
-                <p class="match_error">*Passwords do not match</p>
               </div>
             </div>
           </form>

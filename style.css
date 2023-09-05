@@ -157,6 +157,8 @@ input:focus {
 
 p.match_error {
   display: none;
+  color: red;
+  font-size: 12px;
 }
 
 .error {
